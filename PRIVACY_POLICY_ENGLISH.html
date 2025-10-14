@@ -170,7 +170,17 @@
         <li>Package names and application names of monitored apps</li>
         <li>Application icons (for UI display purposes)</li>
     </ul>
-    <p><strong>Purpose:</strong> This information is collected to enable you to select which applications to monitor for network traffic debugging.</p>
+    
+    <div class="important-note">
+        <h4 style="color: #856404; margin-top: 0;">⚠️ IMPORTANT NOTICE - Installed Applications Access</h4>
+        <p style="color: #856404; margin-bottom: 10px;">As an HTTP debugging tool, this app needs to access your device's installed applications list to allow you to select which apps to monitor for network traffic analysis. This is a core functionality requirement for the app to work properly. The installed app information includes:</p>
+        <ul style="color: #856404;">
+            <li>Application names and package names</li>
+            <li>Application icons (for display purposes only)</li>
+            <li>Basic application metadata</li>
+        </ul>
+        <p style="color: #856404; margin-bottom: 0;"><strong>This data is processed locally on your device only and is never transmitted to external servers or shared with third parties.</strong></p>
+    </div>
 
     <h3>3. Third-Party Services Data Collection</h3>
 
@@ -182,6 +192,7 @@
         <li>IP address (for approximate location)</li>
         <li>Ad interaction data (views, clicks, completions)</li>
         <li>App usage patterns for ad personalization</li>
+        <li><strong>Installed applications list</strong> - Used for ad targeting and fraud prevention (collected by Google AdMob SDK)</li>
     </ul>
 
     <h4>Firebase Analytics and Crashlytics</h4>
@@ -191,6 +202,7 @@
         <li>Crash reports and diagnostic information</li>
         <li>User engagement analytics</li>
         <li>Custom events for feature usage tracking</li>
+        <li><strong>Installed applications list</strong> - May be collected for analytics and fraud detection purposes (collected by Firebase SDK)</li>
     </ul>
 
     <h4>Google Play Billing</h4>
