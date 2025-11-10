@@ -129,6 +129,66 @@
 
     <h2>Information We Collect</h2>
 
+    <div class="warning">
+        <h3 style="color: #721c24; margin-top: 0;">⚠️ CRITICAL DISCLOSURE - INSTALLED APPLICATIONS INFORMATION</h3>
+        <h4 style="color: #721c24;">THIS APP COLLECTS AND ACCESSES YOUR DEVICE'S INSTALLED APPLICATIONS LIST</h4>
+        
+        <p style="color: #721c24;">This is a core and essential functionality of HTTP Sniffer as a network debugging tool. Here's exactly what we collect and why:</p>
+        
+        <h4 style="color: #721c24;">What Installed Application Information We Collect:</h4>
+        <p style="color: #721c24; margin-bottom: 5px;"><strong>Complete list of all installed applications</strong> on your device, including:</p>
+        <ul style="color: #721c24;">
+            <li>Application names (e.g., "Chrome", "Facebook", "WhatsApp")</li>
+            <li>Package names (e.g., "com.android.chrome", "com.facebook.katana")</li>
+            <li>Application icons and logos</li>
+            <li>Application version information</li>
+            <li>Installation status and metadata</li>
+        </ul>
+        
+        <h4 style="color: #721c24;">Why We Need This Information:</h4>
+        <ul style="color: #721c24;">
+            <li><strong>Core Functionality:</strong> As an HTTP/HTTPS network traffic analyzer and debugger, you must be able to select which specific applications you want to monitor</li>
+            <li><strong>User Interface:</strong> Display a list of your installed apps so you can choose which ones to debug</li>
+            <li><strong>Network Monitoring:</strong> Enable targeted network traffic capture for selected applications</li>
+            <li><strong>Developer Tool:</strong> Allow developers and testers to analyze network behavior of specific apps</li>
+        </ul>
+        
+        <h4 style="color: #721c24;">How This Information Is Used:</h4>
+        <ul style="color: #721c24;">
+            <li><strong>Local Processing Only:</strong> The installed applications list is processed and displayed locally on your device</li>
+            <li><strong>User Selection:</strong> Enables you to select target applications for network monitoring</li>
+            <li><strong>No Upload:</strong> This information is NEVER uploaded to our servers</li>
+            <li><strong>No Sharing:</strong> This information is NEVER shared with third parties (except as noted below for third-party SDKs)</li>
+        </ul>
+        
+        <h4 style="color: #721c24;">Third-Party SDK Access to Installed Applications:</h4>
+        <p style="color: #721c24;"><strong>IMPORTANT:</strong> While we do not upload your installed applications list, the following third-party SDKs integrated in our app may also collect this information:</p>
+        <ol style="color: #721c24;">
+            <li><strong>Google AdMob SDK</strong> (Ad-supported version only):
+                <ul>
+                    <li>Collects installed applications list for ad targeting and personalization</li>
+                    <li>Used for fraud detection and prevention</li>
+                    <li>Subject to Google's Privacy Policy</li>
+                </ul>
+            </li>
+            <li><strong>Firebase Analytics SDK</strong>:
+                <ul>
+                    <li>May collect installed applications list for analytics purposes</li>
+                    <li>Used for fraud detection and app quality monitoring</li>
+                    <li>Subject to Google's Privacy Policy</li>
+                </ul>
+            </li>
+            <li><strong>Google Play Services</strong>:
+                <ul>
+                    <li>May access installed applications for various Google services</li>
+                    <li>Subject to Google's Privacy Policy</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <p style="color: #721c24; margin-bottom: 0;"><strong>You cannot opt-out of the installed applications access as it is essential for the core functionality of this HTTP debugging tool. If you do not agree to this data collection, please do not install or use this app.</strong></p>
+    </div>
+
     <h3>1. Information Collected Automatically</h3>
 
     <h4>Device and System Information</h4>
@@ -165,45 +225,46 @@
         <p><strong>Important:</strong> This network traffic data is stored locally on your device only and is never uploaded to our servers or shared with third parties.</p>
     </div>
 
-    <h4>Target Application Information</h4>
-    <ul>
-        <li>Package names and application names of monitored apps</li>
-        <li>Application icons (for UI display purposes)</li>
-    </ul>
-    
-    <div class="important-note">
-        <h4 style="color: #856404; margin-top: 0;">⚠️ IMPORTANT NOTICE - Installed Applications Access</h4>
-        <p style="color: #856404; margin-bottom: 10px;">As an HTTP debugging tool, this app needs to access your device's installed applications list to allow you to select which apps to monitor for network traffic analysis. This is a core functionality requirement for the app to work properly. The installed app information includes:</p>
-        <ul style="color: #856404;">
-            <li>Application names and package names</li>
-            <li>Application icons (for display purposes only)</li>
-            <li>Basic application metadata</li>
-        </ul>
-        <p style="color: #856404; margin-bottom: 0;"><strong>This data is processed locally on your device only and is never transmitted to external servers or shared with third parties.</strong></p>
-    </div>
-
     <h3>3. Third-Party Services Data Collection</h3>
 
     <h4>Google AdMob (Ad-supported version only)</h4>
     <p>When using the ad-supported version of our App, Google AdMob may collect:</p>
     <ul>
+        <li><strong>Installed applications list</strong> - Used for ad targeting, personalization, and fraud prevention</li>
         <li>Advertising ID (GAID)</li>
         <li>Device identifiers</li>
         <li>IP address (for approximate location)</li>
         <li>Ad interaction data (views, clicks, completions)</li>
         <li>App usage patterns for ad personalization</li>
-        <li><strong>Installed applications list</strong> - Used for ad targeting and fraud prevention (collected by Google AdMob SDK)</li>
     </ul>
+    <div class="important-note">
+        <p><strong>Note:</strong> The installed applications list collected by AdMob is used to:</p>
+        <ul>
+            <li>Deliver personalized advertisements based on your app usage patterns</li>
+            <li>Detect and prevent advertising fraud</li>
+            <li>Improve ad relevance and performance</li>
+            <li>This data is subject to Google's Privacy Policy and data handling practices</li>
+        </ul>
+    </div>
 
     <h4>Firebase Analytics and Crashlytics</h4>
     <p>We use Firebase services to improve app quality:</p>
     <ul>
+        <li><strong>Installed applications list</strong> - May be collected for analytics, fraud detection, and app quality monitoring</li>
         <li>App performance metrics</li>
         <li>Crash reports and diagnostic information</li>
         <li>User engagement analytics</li>
         <li>Custom events for feature usage tracking</li>
-        <li><strong>Installed applications list</strong> - May be collected for analytics and fraud detection purposes (collected by Firebase SDK)</li>
     </ul>
+    <div class="important-note">
+        <p><strong>Note:</strong> Firebase may use installed applications data to:</p>
+        <ul>
+            <li>Detect fraudulent activity and abuse</li>
+            <li>Improve analytics accuracy</li>
+            <li>Monitor app quality and performance</li>
+            <li>This data is subject to Google's Privacy Policy</li>
+        </ul>
+    </div>
 
     <h4>Google Play Billing</h4>
     <p>For in-app purchases:</p>
@@ -218,9 +279,39 @@
     <h3>Core App Functionality</h3>
     <ul>
         <li><strong>Network Debugging:</strong> Process HTTP/HTTPS traffic for analysis and debugging</li>
-        <li><strong>App Selection:</strong> Display installed applications for monitoring selection</li>
+        <li><strong>App Selection:</strong> Display installed applications for monitoring selection - <strong>THIS REQUIRES ACCESS TO YOUR COMPLETE INSTALLED APPLICATIONS LIST</strong></li>
         <li><strong>Data Storage:</strong> Store captured network data locally for your analysis</li>
+        <li><strong>Target Monitoring:</strong> Enable you to select specific apps for network traffic analysis</li>
     </ul>
+
+    <h3>Installed Applications List Usage</h3>
+    <div class="important-note">
+        <p><strong>We use your installed applications list for:</strong></p>
+        <ol>
+            <li><strong>Essential Functionality:</strong> Display all your installed apps so you can select which ones to monitor</li>
+            <li><strong>User Interface:</strong> Show app names and icons in the selection interface</li>
+            <li><strong>Network Filtering:</strong> Enable targeted network traffic capture for selected applications</li>
+            <li><strong>Local Processing:</strong> All processing happens on your device; data is not uploaded</li>
+        </ol>
+        
+        <p><strong>Third-party SDKs use installed applications list for:</strong></p>
+        <ol>
+            <li><strong>Google AdMob (Ad version only):</strong>
+                <ul>
+                    <li>Ad targeting and personalization based on your app usage patterns</li>
+                    <li>Fraud detection and prevention</li>
+                    <li>Ad performance optimization</li>
+                </ul>
+            </li>
+            <li><strong>Firebase Analytics:</strong>
+                <ul>
+                    <li>Usage analytics and fraud detection</li>
+                    <li>App quality monitoring</li>
+                    <li>Performance analysis</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
 
     <h3>App Improvement</h3>
     <ul>
@@ -231,7 +322,7 @@
 
     <h3>Advertising (Ad-supported version only)</h3>
     <ul>
-        <li><strong>Personalized Ads:</strong> Display relevant advertisements based on your interests</li>
+        <li><strong>Personalized Ads:</strong> Display relevant advertisements based on your interests and installed apps</li>
         <li><strong>Ad Performance:</strong> Measure ad effectiveness and optimize ad delivery</li>
         <li><strong>Revenue Generation:</strong> Support free app distribution through advertising</li>
     </ul>
