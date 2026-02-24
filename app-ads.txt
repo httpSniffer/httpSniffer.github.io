@@ -1,4 +1,5 @@
 google.com, pub-3727496154077228, DIRECT, f08c47fec0942fa0
+facebook.com, 1357646656396144, DIRECT, c3e20eee3f780d68
 inmobi.com, a4b28905260a4af8b51f7c01e5e182f1, DIRECT, 83e75a7ae333ca9d
 vungle.com, 698fe20f84267a1094282f68, DIRECT, c107d686becd2d77
 adagio.io, 1522, RESELLER
